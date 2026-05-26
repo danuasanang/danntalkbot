@@ -1,0 +1,19 @@
+{
+  "name": "anonymousbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "fs-extra": "^11.3.5",
+    "mongoose": "^9.6.2",
+    "telegraf": "^4.16.3"
+  }
+}
