@@ -290,7 +290,16 @@ const badWords = [
     "goblok",
     "asu",
     "fuck",
-    "bitch"
+    "bitch",
+    "sange",
+    "snge",
+    "bitch",
+    "bool",
+    "s@n93",
+    "54n93",
+    "45u",
+    "turuk",
+    "fuckbitch"
 ]
 
 async function updateBotBio() {
@@ -298,7 +307,7 @@ async function updateBotBio() {
     try {
 
         await bot.telegram.setMyDescription(
-`🤖 Anonymous Chat Bot
+`🤖 DannTalk Bot
 
 👥 Total Pengguna: ${allUsers.length}
 💬 Chat Random Aktif 24 Jam
