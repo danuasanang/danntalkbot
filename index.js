@@ -30,6 +30,13 @@ bot.telegram.setMyCommands([
     }
 ]);
 
+bot.telegram.sendMessage(userId, `
+😞 Partner keluar dari obrolan
+
+/search — cari partner baru  
+/stop — chat berhenti
+`);
+
 bot.command("help", (ctx) => {
     ctx.message.text = "ℹ️ Bantuan";
     bot.handleUpdate(ctx.update);
