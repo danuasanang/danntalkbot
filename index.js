@@ -30,12 +30,6 @@ bot.telegram.setMyCommands([
     }
 ]);
 
-bot.telegram.sendMessage(userId, `
-😞 Partner keluar dari obrolan
-
-/search — cari partner baru  
-/stop — chat berhenti
-`);
 
 bot.command("help", (ctx) => {
     ctx.message.text = "ℹ️ Bantuan";
@@ -202,7 +196,12 @@ bot.hears("⛔ Stop Chat", (ctx) => {
     delete activeChats[partnerId];
 
     bot.telegram.sendMessage(userId, "⛔ Chat dihentikan.");
-    bot.telegram.sendMessage(partnerId, "⛔ Partner meninggalkan chat.");
+    bot.telegram.sendMessage(userId, `
+😞 Partner keluar dari obrolan
+
+/search — cari partner baru  
+/stop — chat berhenti
+`);
 });
 
 // NEXT BUTTON
